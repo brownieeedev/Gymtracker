@@ -32,6 +32,7 @@ export default async function WeightChart() {
         <div className="mt-0 grid  grid-cols-12 items-end gap-2 rounded-md bg-white p-4 sm:grid-cols-13 md:gap-4">
           {weightOnDays.map((item, index) => (
             <div key={index} className="flex flex-col  items-center gap-2">
+              <div className="text-[10px]">{item.weight}</div>
               <div
                 className="w-full rounded-md bg-sky-400 "
                 style={{
